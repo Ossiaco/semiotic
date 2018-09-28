@@ -21,5 +21,9 @@ examples/dist/bundle.js
 dist/semiotic.js
 
 /dist
+/types/lib
+/types/lib-amd
+/types/lib-es2015
+/*.log
 
 screenshots
