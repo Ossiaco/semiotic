@@ -1,0 +1,6 @@
+{
+  "files": {
+    "semiotic": "4e532a57cc20cab9ffcb76395dafd80316f0eb1d"
+  },
+  "arguments": "node types/scripts/build.js --production"
+}
