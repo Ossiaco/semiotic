@@ -12,8 +12,12 @@ import Brush from "./Brush"
 import InteractionLayer from "./InteractionLayer"
 import VisualizationLayer from "./VisualizationLayer"
 import NetworkFrame from "./NetworkFrame"
-import { funnelize } from "./svg/lineDrawing"
-import { calculateDataExtent } from "./data/dataFunctions"
+import {
+  funnelize
+} from "./svg/lineDrawing"
+import {
+  calculateDataExtent
+} from "./data/dataFunctions"
 
 import FacetController from "./FacetController"
 
@@ -25,8 +29,13 @@ import ResponsiveOrdinalFrame from "./ResponsiveOrdinalFrame"
 import SparkXYFrame from "./SparkXYFrame"
 import SparkOrdinalFrame from "./SparkOrdinalFrame"
 import SparkNetworkFrame from "./SparkNetworkFrame"
-import { chuckCloseCanvasTransform } from "./canvas/basicCanvasEffects"
-import { Mark } from "semiotic-mark"
+import {
+  chuckCloseCanvasTransform
+} from "./canvas/basicCanvasEffects"
+import {
+  Mark
+} from "semiotic-mark"
+import ResponsiveMiniMap from "./ResponsiveMiniMap"
 const ORFrame = OrdinalFrame
 const ResponsiveORFrame = ResponsiveOrdinalFrame
 
@@ -58,7 +67,8 @@ export default {
   Legend,
   chuckCloseCanvasTransform,
   Mark,
-  FacetController
+  FacetController,
+  ResponsiveMiniMap
 }
 
 export {
@@ -89,5 +99,6 @@ export {
   Legend,
   chuckCloseCanvasTransform,
   Mark,
-  FacetController
+  FacetController,
+  ResponsiveMiniMap
 }
