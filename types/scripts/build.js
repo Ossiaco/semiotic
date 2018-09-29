@@ -5,7 +5,7 @@ const {
     logStartTask,
     logEndTask,
     logEndBuild
-} = require('../../../build/logging');
+} = require('../../../../scripts/logging');
 const package = getPackage();
 process.chdir(path.resolve(process.cwd(), 'types'))
 
@@ -52,7 +52,7 @@ function runTask(task) {
     return Promise.resolve()
         .then(() => !hasFailures && Promise.resolve()
             .then(() => logStartTask(packageName, task))
-            .then(() => require('../../../build/tasks/' + task)({
+            .then(() => require('../../../../scripts/tasks/' + task)({
                 isProduction,
                 argv: process.argv
             }))
