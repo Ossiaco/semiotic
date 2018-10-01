@@ -28,3 +28,4 @@ dist/semiotic.js
 /*.log
 
 screenshots
+package-deps.json
