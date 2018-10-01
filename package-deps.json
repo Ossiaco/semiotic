@@ -1,4 +1,4 @@
 {
   "files": {},
-  "arguments": "node types/scripts/build.js --production --lint"
+  "arguments": "npm run _buildBabel && cd types && npm run _buildtypes --production --lint"
 }
