@@ -5,23 +5,15 @@
     "main": "lib/index.js",
     "unpkg": "dist/semiotic.min.js",
     "typings": "types/lib/index.d.ts",
-    "disabledTasks": [
-        "sass",
-        "karma",
-        "jest",
-        "lint-imports",
-        "tslint",
-        "webpack"
-    ],
     "files": [
         "lib",
         "dist"
     ],
     "scripts": {
-        "_buildtypes": "node ../../scripts/build.js",
+        "_buildtypes": "node types/scripts/build.js",
         "_buildBabel": "babel src/components --out-dir lib --ignore test.js",
         "start": "node scripts/start.js",
-        "build": "npm run _buildBabel && cd types && npm run _buildtypes",
+        "build": "npm run _buildBabel && npm run _buildtypes",
         "test": "BABEL_ENV=test NODE_ENV=test PUBLIC_URL='' jest --env=jsdom",
         "test:watch": "npm run test -- --watch",
         "test:coverage": "npm run test -- --coverage",
